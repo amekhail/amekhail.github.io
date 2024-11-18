@@ -473,3 +473,64 @@ i {
         width: 300px;
     }
 }
+
+.hero_text {
+    display: flex;
+    margin-top: 1rem;
+    margin: 0 auto;
+    height: 95vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.hero_paragraphs {
+    max-width: 650px;
+    
+}
+
+.hero_paragraphs p {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero_text img {
+    max-width: 525px;
+    max-height: 700px;
+}
+
+@media screen and (max-width: 960px) {
+    .hero_text {
+        display: block;
+        height: fit-content;
+    }
+
+    .hero_text img {
+        max-width: 450px;
+        max-height: 600px;
+    }
+
+    .hero_paragraphs p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero_text {
+        height: fit-content;
+    }
+
+    .hero_text img {
+        max-width: 300px;
+        max-height: 500px;
+    }
+    
+    .hero_paragraphs p {
+        font-size: 1rem;
+    }
+
+}
