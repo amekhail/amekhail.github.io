@@ -535,3 +535,65 @@ i {
     }
 
 }
+
+
+
+.portfolio_item_container {
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    padding: 1.8em / 2;
+}
+
+.portfolio_item_body {
+    width: 12em;
+    max-height: 100%;
+    flex: 1 1 auto;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 1.8em;
+}
+
+.portfolio_card_text {
+    position: relative;
+    flex: 1;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 0.8em 0;
+    padding: 0;
+    h2, p {
+        margin-top: 0;
+    }
+    
+}
+
+.portfolio_card_text a {
+    
+    color: white;
+    text-decoration: none; 
+}
+
+.portfolio_card_text button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.portfolio_item {
+    margin: 1.8em / 2;
+    height: 15em;
+    max-width: 15em * 3;
+    flex: 1 1 auto;
+    display: flex;
+    background-color: rgb(53, 50, 50);
+    box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+    img {
+        height: 100%;
+        max-width: 15em;
+        object-fit: cover;
+        flex: 1 1 auto;
+    }
+}
+
